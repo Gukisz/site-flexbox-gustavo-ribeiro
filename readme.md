@@ -37,7 +37,6 @@ Restaurante moderno e minimalista com foco em:
   - Flexbox e Grid
   - Animações e transições
   - Design responsivo (mobile-first)
-- **JavaScript** - Interações básicas (menu mobile)
 
 ### Bibliotecas e Recursos Externos
 - **Font Awesome** - Ícones
@@ -46,7 +45,6 @@ Restaurante moderno e minimalista com foco em:
 
 ### Ferramentas
 - **VS Code** - Editor de código
-- **Git** - Controle de versão
 - **DuckDuckGo Images** - Imagens de placeholder
 
 ## 🌟 Recursos Especiais
