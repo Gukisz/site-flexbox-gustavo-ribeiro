@@ -1,0 +1,206 @@
+/* Estilos Específicos do Cardápio */
+.menu-hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('images/prato1.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px 0;
+}
+
+.menu-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.menu-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  font-weight: 300;
+}
+
+.menu-section {
+  padding: 80px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.menu-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background-color: var(--gold);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+  transition: var(--transition);
+}
+
+.menu-item:hover {
+  padding: 25px 15px;
+  background-color: rgba(200, 169, 126, 0.05);
+}
+
+.item-info h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+
+.item-info p {
+  color: var(--gray);
+  font-size: 0.95rem;
+  max-width: 500px;
+}
+
+.item-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gold);
+  min-width: 80px;
+  text-align: right;
+}
+
+/* Seção do Chef */
+.chef-section {
+  padding: 100px 0;
+  background-color: #f8f8f8;
+}
+
+.chef-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chef-image {
+  flex: 1;
+  position: relative;
+}
+
+.chef-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 20px 20px 0 var(--gold);
+}
+
+.chef-text {
+  flex: 1;
+}
+
+.chef-text h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.chef-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background-color: var(--gold);
+}
+
+.chef-text p {
+  margin-bottom: 20px;
+  color: var(--gray);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Responsividade do Cardápio */
+@media (max-width: 1024px) {
+  .menu-hero h1 {
+    font-size: 3.2rem;
+  }
+  
+  .chef-content {
+    gap: 40px;
+  }
+  
+  .chef-image img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-hero {
+    height: 50vh;
+  }
+  
+  .menu-section h2, 
+  .chef-text h2 {
+    font-size: 2.2rem;
+  }
+  
+  .chef-content {
+    flex-direction: column;
+  }
+  
+  .chef-image img {
+    box-shadow: 0 10px 0 var(--gold);
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-hero h1 {
+    font-size: 2.4rem;
+  }
+  
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .item-price {
+    align-self: flex-end;
+  }
+  
+  .chef-text h2 {
+    font-size: 2rem;
+  }
+}
